@@ -7,15 +7,15 @@ const router = express.Router();
 router.post("/users", UserController.create);
 
 // lendo todos os usuarios
-router.get("users", UserController.findAll);
+router.get("/users", UserController.findAll);
 
 // lendo um usuario
-router.get("users/:userID", UserController.findOne);
+router.get("/users/:userId", UserController.findOne);
 
 // alterando um usuario
-router.put("users/:userID", UserController.update);
+router.put("/users/:userId", UserController.update);
 
 // deletando um usuario
-router.delete("user/:userID", UserController.destroy);
+router.delete("/users/:userId", UserController.destroy);
 
 export { router };
