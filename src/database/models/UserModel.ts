@@ -12,11 +12,11 @@ export const UserModel = db.define("user", {
         type: DataTypes.STRING,
         allowNull: false,
     },
-    nome: {
+    name: {
         type: DataTypes.STRING,
         allowNull: false,
     },
-    idade: {
+    age: {
         type: DataTypes.INTEGER,
     },
 });

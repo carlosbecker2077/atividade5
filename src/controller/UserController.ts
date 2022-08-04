@@ -21,11 +21,11 @@ class UserController {
     }
 
     async create(req: Request, res: Response) {
-        const { email, nome, idade } = req.body;
+        const { email, name, age } = req.body;
         const user = await UserModel.create({
             email,
-            nome,
-            idade,
+            name,
+            age,
         });
         return res.status(201).json(user);
     }
